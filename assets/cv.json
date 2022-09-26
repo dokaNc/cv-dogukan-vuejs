@@ -1,0 +1,46 @@
+{
+    "firstName": "Dogukan",
+    "lastName": "CIRPAN",
+    "age": 23,
+    "title": "Développeur FullStack & Graphiste",
+    "aboutMe": "J'aime énormément mettre oeuvre mes connaissances pour le développement des projets et l'apprentisage de nouvelles compétences. Je travail méticuleusement et je cherche à toujours m'améliorer personnellement.",
+    "adress": "Paris 11ème",
+    "phone": "06 84 22 66 29",
+    "mail": "dogukan.crp@gmail.com",
+    "experience" : [
+        {
+            "title": "Développeur Freelance PHP / WordPres",
+            "companyName": "Hello Courtier",
+            "country": "France",
+            "city": "Paris",
+            "startDate": "01-12-2018",
+            "endDate": "01-01-2019"
+        },
+        {
+            "title": "Développeur Freelance PHP / WordPres",
+            "companyName": "Strack à Table",
+            "country": "France",
+            "city": "Paris",
+            "startDate": "01-09-2018",
+            "endDate": "01-10-2019"
+        },
+        {
+            "title": "Développeur Freelance PHP / WordPres",
+            "companyName": "Pronos But",
+            "country": "France",
+            "city": "Marseille",
+            "startDate": "01-12-2020",
+            "endDate": "01-01-2021"
+        }
+    ],
+    "formation": [
+        {
+            "title": "Développeur d'application PHP / Symfony",
+            "schoolName": "OpenclassRooms",
+            "country": "France",
+            "city": "Paris",
+            "startDate": "01-10-2018",
+            "endDate": "01-04-2021"
+        }
+    ]
+}
