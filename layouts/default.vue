@@ -1,46 +1,23 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title v-text="title" />
+    <v-app-bar color="transparent" hide-on-scroll flat app>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     </v-app-bar>
+      <v-navigation-drawer v-model="drawer" absolute temporary>
+        <v-list nav dense>
+          <v-list-item-group v-model="group">
+            <v-list-item v-for="(item, i) in items" :key="i" link>
+              <v-list-item-title>
+                  {{item.title}}
+              </v-list-item-title>
+            </v-list-item>
+          </v-list-item-group>
+        </v-list>
+      </v-navigation-drawer>
     <v-main>
-      <v-container>
         <Nuxt />
-      </v-container>
     </v-main>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
+    <v-footer app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
@@ -51,21 +28,30 @@ export default {
   name: 'DefaultLayout',
   data () {
     return {
-      clipped: false,
       drawer: false,
-      fixed: false,
+      group: null,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Accueil',
           to: '/'
         },
       ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
     }
-  }
+  },
+
+  watch: {
+      group () {
+        this.drawer = false
+      },
+    },
 }
 </script>
+
+<style scoped>
+  /* .theme--dark.v-application {
+    background-color: #3c4649;
+  } */
+  .theme--dark.v-navigation-drawer {
+    background-color: #191919;
+  } 
+  </style>
