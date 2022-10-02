@@ -1,27 +1,44 @@
 <template>
-  <div>
-    <headerComp :title="cv.title"/>
-    <aboutComp :aboutMe="cv.aboutMe"/>
-  </div>
+    <div>
+        <cardPresentation
+        :firstName="cv.firstName" 
+        :lastName="cv.lastName" 
+        :title="cv.title" 
+        :aboutMe="cv.aboutMe" 
+        :softSkills="cv.softSkills"
+        />
+    </div>
 </template>
 
 <script>
-import aboutComp from '../components/about';
-import headerComp from '../components/header'
-import cvData from '../assets/cv.json';
+import cardPresentation from '../components/cv/cardPresentation';
+import cvJson from '../assets/cv2.json'
 
 export default {
-  name: 'IndexPage',
+    name: 'CvPage',
 
-  data() {
-    return {
-      cv: cvData
+    data() {
+        return {
+            cv: cvJson
+        }
+    },
+
+    components: {
+        cardPresentation
     }
-  },
-
-  components: {
-    aboutComp,
-    headerComp
-  }
 }
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Montserrat:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* font-family: 'Cinzel', serif; */
+/* font-family: 'Montserrat', sans-serif; */
+
+
+</style>
