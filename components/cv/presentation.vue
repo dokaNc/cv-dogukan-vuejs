@@ -2,10 +2,13 @@
   <div>
     <v-container>
         <v-row>
+            <v-col cols="12" md="12">
+                <h1>Je me présente 👋</h1>
+            </v-col>
             <v-col cols="12">
                 <v-card rounded="lg" class="pa-5">
                     <v-card-title>
-                        {{ firstName }} {{ lastName }} 👋
+                        {{ firstName }} {{ lastName }}
                     </v-card-title>
                     <v-card-subtitle>
                         {{ title }}
@@ -19,7 +22,6 @@
                                 color="#9836F4"
                                 v-for="(item, i) in softSkills"
                                 :key="i"
-                                ripple="false"
                                 small
                                 outlined
                             >
@@ -28,10 +30,10 @@
                         </v-chip-group>
 
                         <v-avatar size="18">
-                            <img alt="Avatar" src="../../static/flags/fr.svg">
+                            <img alt="flag-fr" src="../../static/flags/fr.svg">
                         </v-avatar>
                         <v-avatar size="18" class="ml-2">
-                            <img alt="Avatar" src="../../static/flags/gb.svg">
+                            <img alt="flag-gb" src="../../static/flags/gb.svg">
                         </v-avatar>
                     </v-card-text>
                 </v-card>
@@ -43,7 +45,7 @@
 
 <script>
 export default {
-    name: 'cardPresentation',
+    name: 'presentation',
 
     props: {
         firstName: String,

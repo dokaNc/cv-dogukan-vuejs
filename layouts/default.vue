@@ -79,10 +79,6 @@ export default {
   methods: {
     handleDrawer() {
       return this.drawer = !this.drawer;
-    },
-
-    mobile() {
-      return this.drawer = false;
     }
   },
 

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <cardPresentation
+        <presentation
         :firstName="cv.firstName" 
         :lastName="cv.lastName" 
         :title="cv.title" 
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import cardPresentation from '../components/cv/cardPresentation';
-import cvJson from '../assets/cv2.json'
+import presentation from '../components/cv/presentation';
+import cvJson from '../assets/cv.json'
 
 export default {
-    name: 'CvPage',
+    name: 'index',
 
     data() {
         return {
@@ -24,7 +24,7 @@ export default {
     },
 
     components: {
-        cardPresentation
+        presentation
     }
 }
 </script>
