@@ -1,0 +1,71 @@
+{
+    "firstName": "Dogukan",
+    "lastName": "CIRPAN",
+    "age": 23,
+    "title": "Développeur FullStack & Graphiste",
+    "aboutMe": "Toutes mes compétences et passions tels que le codage, sport, piano, graphisme, cuisine, voyage ont fait de moi une personne qui est capable d’avoir l’esprit d’équipe, la concentration, la détermination, la créativité, la patience, l’autonomie et l’envie d’apprendre à apprendre. J'aime énormément mettre oeuvre mes connaissances pour le développement des projets et l'apprentisage de nouvelles compétences. Je travail méticuleusement et je cherche à toujours m'améliorer personnellement.",
+    "adress": "Paris 11ème",
+    "phone": "06 84 22 66 29",
+    "mail": "dogukan.crp@gmail.com",
+    "softSkills" : ["Autonome", "Esprit d'équipe", "Créatif", "Communication"],
+    "experience": {
+        "developpeur": [
+            {
+                "title": "Développeur PHP / WordPress",
+                "companyName": "Pronos But",
+                "work": "Pour cette mission j'ai accompagné mon client du développement à la mise en production du projet. J'ai travaillé sur le CMS WordPress, tout en utilisant les plugins à disposition pour mettre en place un système d'abonnement pour les clients qui souhaitent accéder aux contenues payant. Pour la partie front, j'ai proposé le thème le plus pertinent pour son application web.",
+                "job": "Freelance",
+                "country": "France",
+                "city": "Marseille",
+                "startDate": "12-01-2020",
+                "endDate": "01-01-2021",
+                "tags": ["php", "wordpress", "stripe", "mysql", "o2switch"]
+            },
+            {
+                "title": "Développeur PHP / WordPress",
+                "companyName": "Strack à Table",
+                "work": "Pour cette mission j'ai accompagné mon client du développement à la mise en production du projet. J'ai travaillé sur le CMS WordPress, tout en utilisant les plugins à disposition pour subvenir aux besoins du client. Pour la partie front, j'ai proposé le thème le plus pertinent pour son application web avec quelques modifications supplémentaire dans le code interne du thème.",
+                "job": "Freelance",
+                "country": "France",
+                "city": "Paris",
+                "startDate": "09-01-2019",
+                "endDate": "10-01-2019",
+                "tags": ["php", "wordpress", "wpforms", "mysql", "o2switch"]
+            },
+            {
+                "title": "Développeur PHP / WordPress",
+                "companyName": "Hello Courtier",
+                "work": "Pour cette mission mon client a décidé de travailler avec moi pour reprendre son projet qui était déjà en production. Il y avait toute la partie front à revoir, suite au responsive web mal géré par le précédent développeur, j'ai donc pu subvenir aux besoins front du client. Pour terminer, j'ai optimisé l'application web en revoyant toutes les images et j'ai migré l'application web vers un nouvel hébergement plus adaptée à son application web.",
+                "job": "Freelance",
+                "country": "France",
+                "city": "Paris",
+                "startDate": "12-01-2018",
+                "endDate": "01-01-2019",
+                "tags": ["php", "wordpress", "divi" ,"mysql", "ovh"]
+            }
+        ],
+        "graphisme": [
+            {
+                "title": "Graphisme Freelance",
+                "companyName": "Hamady Resto Rouen",
+                "work": "",
+                "job": "Freelance",
+                "country": "France",
+                "city": "Rouen",
+                "startDate": "12-01-2018",
+                "endDate": "01-01-2019",
+                "tags": []
+            }
+        ],
+        "ecole": [
+            {
+                "title": "Développeur d'application PHP / Symfony",
+                "schoolName": "OpenclassRooms",
+                "country": "France",
+                "city": "Paris",
+                "startDate": "10-01-2018",
+                "endDate": "04-01-2021"
+            }
+        ]
+    }
+}

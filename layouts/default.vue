@@ -91,7 +91,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="css" scoped>
   /* GLOBAL */
   * {
     font-family: "Montserrat", sans-serif;
